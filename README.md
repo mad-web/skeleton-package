@@ -21,20 +21,14 @@ If any of the following are applicable to your project, then the directory struc
 bin/        
 config/
 src/
+resources/
 tests/
 vendor/
 ```
 
 ## Installation
 
-**Note:** Remove this paragraph if you are building a public package  
-This package is custom built for [Mad Web](https://github.com/mad-web) projects and is therefore not registered on packagist. In order to install it via composer you must specify this extra repository in `composer.json`:
-
-```json
-"repositories": [ { "type": "composer", "url": "https://satis.mad-web.com/" } ]
-```
-
-You can install the package via composer:
+Via Composer:
 
 ```bash
 composer require mad-web/:package_name
@@ -47,15 +41,15 @@ $skeleton = new MadWeb\Skeleton();
 echo $skeleton->echoPhrase('Hello, Mad Web!');
 ```
 
+### Testing
+
+``` bash
+composer test
+```
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
 
 ## Contributing
 
